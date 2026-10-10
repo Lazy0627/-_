@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于我们 (៸៸-ω(-ω-៸៸)</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    background: #f0f7ff;
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 32px 16px;
+  }
+  .app { width: 100%; max-width: 640px; }
+
+  /* 顶部 */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .topbar h1 { font-size: 20px; color: #1e3a5f; font-weight: 700; letter-spacing: 1px; }
+  .topbar span { font-size: 12px; color: #7ba7cc; }
+
+  /* 双人卡片 */
+  .profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 480px) { .profiles { grid-template-columns: 1fr; } }
+
+  .card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px 20px 20px;
+    box-shadow: 0 4px 20px rgba(100, 150, 200, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  .card:hover { transform: translateY(-4px); }
+
+  /* 头像 */
+  .avatar {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    margin: 0 auto 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    border: 3px solid #e0efff;
+    overflow: hidden;
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .name { font-size: 17px; font-weight: 700; color: #1e3a5f; margin-bottom: 4px; }
+  .handle { font-size: 12px; color: #9bb8d4; margin-bottom: 14px; }
+
+  /* 关注按钮 */
+  .btn {
+    display: inline-block;
+    padding: 7px 24px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .btn:hover { opacity: 0.8; }
+  .btn.follow { background: #7bb8e8; color: #fff; }
+
+  /* 简介 */
+  .bio {
+    font-size: 13px;
+    color: #6b8aa8;
+    line-height: 1.7;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #eef6ff;
+    text-align: left;
+  }
+
+  /* 个人信息区域 */
+  .info {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed #eef6ff;
+    text-align: left;
+  }
+  .info .row {
+    display: flex;
+    font-size: 12px;
+    color: #6b8aa8;
+    margin-bottom: 6px;
+  }
+  .info .row .k {
+    width: 62px;
+    color: #9bb8d4;
+    flex-shrink: 0;
+  }
+  .info .row .v { color: #5a8ab5; }
+
+  /* 统计数字 */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #eef6ff;
+  }
+  .stats div { text-align: center; }
+  .stats .num { font-size: 16px; font-weight: 700; color: #1e3a5f; }
+  .stats .label { font-size: 11px; color: #9bb8d4; margin-top: 2px; }
+
+  /* 在一起的时间 */
+  .together {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(100, 150, 200, 0.1);
+    text-align: center;
+  }
+  .together .title { font-size: 13px; color: #7ba7cc; margin-bottom: 12px; }
+  .timer { display: flex; justify-content: center; gap: 10px; }
+  .timer div {
+    background: #f0f7ff;
+    border-radius: 12px;
+    padding: 10px 12px;
+    min-width: 58px;
+  }
+  .timer .num { font-size: 18px; font-weight: 700; color: #5a8ab5; }
+  .timer .label { font-size: 10px; color: #9bb8d4; margin-top: 2px; }
+
+  .footer { text-align: center; margin-top: 24px; font-size: 11px; color: #b8d0e4; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+  <div class="app">
+    <div class="topbar">
+      <h1>关于我们 (៸៸-ω(-ω-៸៸)</h1>
+      <span>OUR SPACE</span>
+    </div>
+
+    <div class="profiles">
+      <!-- ========== 左边：蓝桉 ========== -->
+      <div class="card">
+        <div class="avatar a">
+          <img src="mmexport1790957480152.jpg" alt="头像">
+        </div>
+        <div class="name">蓝桉</div>
+        <div class="handle">@lanan</div>
+        <button class="btn follow">关注</button>
+
+        <div class="bio">
+          我們應該坐在一起看星星。
+        </div>
+
+        <div class="info">
+          <div class="row"><span class="k">性格</span><span class="v">脾气古怪型选手 经常性烦躁易怒</span></div>
+          <div class="row"><span class="k">星座</span><span class="v">巨蟹座</span></div>
+          <div class="row"><span class="k">MBTI</span><span class="v">INFP</span></div>
+          <div class="row"><span class="k">注意事项</span><span class="v">说话带句号不仅仅是因为心情不好。</span></div>
+        </div>
+
+        <div class="stats">
+          <div><div class="num">52</div><div class="label">动态</div></div>
+          <div><div class="num">7.12k</div><div class="label">粉丝</div></div>
+          <div><div class="num">1</div><div class="label">关注</div></div>
+        </div>
+      </div>
+
+      <!-- ========== 右边：知野 ========== -->
+      <div class="card">
+        <div class="avatar b">
+          <img src="mmexport1790957477573.jpg" alt="头像">
+        </div>
+        <div class="name">知野</div>
+        <div class="handle">@zhiye</div>
+        <button class="btn follow">关注</button>
+
+        <div class="bio">
+          然后我說人類好渺小啊 你說愛很偉大啊。
+        </div>
+
+        <div class="info">
+          <div class="row"><span class="k">性格</span><span class="v">做精吃醋型选手 经常没由来的闹脾气</span></div>
+          <div class="row"><span class="k">星座</span><span class="v">双子座</span></div>
+          <div class="row"><span class="k">MBTI</span><span class="v">INTP</span></div>
+          <div class="row"><span class="k">注意事项</span><span class="v">心情经常在说话时外露 容易察觉。</span></div>
+        </div>
+
+        <div class="stats">
+          <div><div class="num">88</div><div class="label">动态</div></div>
+          <div><div class="num">6.20k</div><div class="label">粉丝</div></div>
+          <div><div class="num">1</div><div class="label">关注</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 计时器 -->
+    <div class="together">
+      <div class="title">我们在一起已经</div>
+      <div class="timer" id="timer"></div>
+    </div>
+
+    <div class="footer">MADE WITH ♡</div>
+  </div>
+
+<script>
+  const startDate = new Date('2024-02-02T00:00:00');
+  function update() {
+    const now = new Date();
+    const diff = now - startDate;
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor(diff % 86400000 / 3600000);
+    const mins = Math.floor(diff % 3600000 / 60000);
+    const secs = Math.floor(diff % 60000 / 1000);
+    document.getElementById('timer').innerHTML = `
+      <div><div class="num">${days}</div><div class="label">天</div></div>
+      <div><div class="num">${hours}</div><div class="label">时</div></div>
+      <div><div class="num">${mins}</div><div class="label">分</div></div>
+      <div><div class="num">${secs}</div><div class="label">秒</div></div>
+    `;
+  }
+  update(); setInterval(update, 1000);
+</script>
+</body>
+</html>
